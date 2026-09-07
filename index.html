@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaTech | Modern Static Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">Nova<strong>Tech</strong></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">🚀 Introducing NovaTech 2.0</div>
+          <h1 class="hero-title">
+            Build something <span class="gradient-text">extraordinary</span> with simplicity.
+          </h1>
+          <p class="hero-subtitle">
+            A fast, responsive, and beautifully crafted static template ready for your product, portfolio, or landing page.
+          </p>
+          <div class="hero-cta">
+            <a href="#features" class="btn btn-primary">Explore Features</a>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+          </div>
+          <div class="hero-stats-row">
+            <div class="stat-pill">
+              <span class="stat-num">99.9%</span>
+              <span class="stat-label">Uptime</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">10k+</span>
+              <span class="stat-label">Happy Users</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">0ms</span>
+              <span class="stat-label">Build Lag</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="preview-card glass-card">
+            <div class="preview-header">
+              <div class="preview-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="preview-url">novatech.io/dashboard</span>
+            </div>
+            <div class="preview-body">
+              <div class="widget-row">
+                <div class="widget-box">
+                  <span class="widget-icon">⚡</span>
+                  <h4>Ultra Fast</h4>
+                  <p>Pure HTML & CSS</p>
+                </div>
+                <div class="widget-box">
+                  <span class="widget-icon">🛡️</span>
+                  <h4>Zero Config</h4>
+                  <p>Ready to deploy</p>
+                </div>
+              </div>
+              <div class="chart-mock">
+                <div class="bar" style="--h: 40%"></div>
+                <div class="bar" style="--h: 65%"></div>
+                <div class="bar" style="--h: 50%"></div>
+                <div class="bar" style="--h: 85%"></div>
+                <div class="bar" style="--h: 70%"></div>
+                <div class="bar" style="--h: 95%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Features</span>
+          <h2 class="section-title">Everything you need to launch fast</h2>
+          <p class="section-desc">Designed with modern web standards, lightweight assets, and clean typography.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card feature-card">
+            <div class="card-icon">⚡</div>
+            <h3 class="card-title">Blazing Performance</h3>
+            <p class="card-text">No bloated dependencies or complex build steps. Pure lightweight HTML5, modern CSS3, and vanilla JS.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="card-icon">📱</div>
+            <h3 class="card-title">Fully Responsive</h3>
+            <p class="card-text">Flawlessly adapts to any screen size from mobile smartphones to ultra-wide desktop monitors.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="card-icon">🎨</div>
+            <h3 class="card-title">Dark & Light Mode</h3>
+            <p class="card-text">Equipped with automatic theme detection and a smooth manual toggle that saves user preferences.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="card-icon">🧩</div>
+            <h3 class="card-title">Modular & Clean</h3>
+            <p class="card-text">Well-structured codebase that is easy to customize, rebrand, or expand with new sections.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="card-icon">🔒</div>
+            <h3 class="card-title">SEO & Accessible</h3>
+            <p class="card-text">Built with semantic markup, proper heading hierarchy, and accessible interactive elements.</p>
+          </div>
+
+          <div class="card feature-card">
+            <div class="card-icon">🌐</div>
+            <h3 class="card-title">Host Anywhere</h3>
+            <p class="card-text">Deploy in seconds to GitHub Pages, Netlify, Vercel, Cloudflare Pages, or any web host.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">Why Choose Us</span>
+            <h2 class="section-title">Crafted for creators, engineers, and innovators</h2>
+            <p class="section-desc">
+              We believe in simple, clean, and elegant design. By stripping away unnecessary bloat, we allow your core message to shine through clearly.
+            </p>
+            <ul class="about-list">
+              <li><span>✓</span> Clean modern design system with CSS custom properties</li>
+              <li><span>✓</span> Interactive components with zero third-party dependencies</li>
+              <li><span>✓</span> Form validation and toast notifications built-in</li>
+            </ul>
+            <div class="about-cta">
+              <a href="#pricing" class="btn btn-primary">Check Pricing</a>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="stat-card-highlight">
+              <h3>100%</h3>
+              <p>Lighthouse Score Optimization</p>
+            </div>
+            <div class="stat-card-highlight accent">
+              <h3>&lt; 50ms</h3>
+              <p>Instantaneous Page Loads</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Pricing Plans</span>
+          <h2 class="section-title">Simple, transparent pricing</h2>
+          <p class="section-desc">Choose the plan that best matches your workflow.</p>
+        </div>
+
+        <div class="grid grid-3 pricing-grid">
+          <div class="pricing-card">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-desc">For personal projects & hobbyists</p>
+            <div class="plan-price"><span class="currency">$</span>0<span class="period">/mo</span></div>
+            <ul class="plan-features">
+              <li>✓ 1 Active Project</li>
+              <li>✓ Basic Static Hosting</li>
+              <li>✓ Community Support</li>
+              <li class="disabled">✕ Custom Domain</li>
+            </ul>
+            <button class="btn btn-secondary btn-block">Get Started</button>
+          </div>
+
+          <div class="pricing-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <h3 class="plan-name">Professional</h3>
+            <p class="plan-desc">For freelancers and growing brands</p>
+            <div class="plan-price"><span class="currency">$</span>19<span class="period">/mo</span></div>
+            <ul class="plan-features">
+              <li>✓ Unlimited Projects</li>
+              <li>✓ Custom Domain & SSL</li>
+              <li>✓ Fast Global CDN</li>
+              <li>✓ Priority Email Support</li>
+            </ul>
+            <button class="btn btn-primary btn-block">Choose Pro</button>
+          </div>
+
+          <div class="pricing-card">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-desc">For large teams and companies</p>
+            <div class="plan-price"><span class="currency">$</span>49<span class="period">/mo</span></div>
+            <ul class="plan-features">
+              <li>✓ Everything in Pro</li>
+              <li>✓ Dedicated SLA</li>
+              <li>✓ 24/7 Phone & Slack Support</li>
+              <li>✓ Custom Integration Support</li>
+            </ul>
+            <button class="btn btn-secondary btn-block">Contact Sales</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-box glass-card">
+          <div class="contact-header">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title">Send us a message</h2>
+            <p class="section-desc">Have a question or want to work together? Fill out the form below.</p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo">
+          <span class="logo-icon">✨</span>
+          <span class="logo-text">Nova<strong>Tech</strong></span>
+        </a>
+        <p class="footer-tagline">Crafting modern, lightning-fast static web experiences.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Navigation</h4>
+          <a href="#hero">Home</a>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="link-group">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> NovaTech. All rights reserved. Created with pure HTML, CSS, and JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
